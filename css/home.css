@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 640vh;
+    font-family:sans-serif;
+}
+.headr{
+    width: 100%;
+    height: 95vh;
+    background-image: url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60% 100%;
+    position: relative;
+}
+.headr nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.headr nav .navlist{
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+.headr nav .navlist ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.headr nav .navlist ul li{
+    margin: 0 24px 0 0 ;
+    
+}
+.headr nav .navlist ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+/* button js with the overlay div */
+.headr nav .butn{
+    width: fit-content;
+    position: absolute;
+    right: 3%;
+    bottom: 25%;
+    z-index: 9;
+}.left-nav
+{
+    transform: translateX(-100%);
+
+} /* .menu_nav{
+    position: fixed;
+    top: 5%;
+  }*/
+.headr nav .overlay{
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(53, 84, 209, 0.9);
+    width: 100%;
+    transition: all .5s ease;   
+    overflow-x: hidden;
+}.headr nav .overlay .overlaycontent{
+    position: relative;
+    top: 35%;
+    text-align: center;
+    width: 100%;
+}.headr nav .overlay .overlaycontent a{
+    display: block;
+    font-size:23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 40px;
+    transition: color .3s ease;
+}
+.headr nav .overlay .overlaycontent a:hover{
+ color: black;
+}
+
+
+/* button js */
+.headr nav .logo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(7%,0);
+    margin: 0 16px 0 0;
+    padding: 5px 0;
+}
+.headr nav .logo img{
+    width: 90px;
+}
+/* end of nav bar */
+.headr .LeftSideHeadrContent{
+    height: calc(100% - 10vh);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.headr .LeftSideHeadrContent .headrcontent{
+    width: 80%;
+    height: 70vh;
+   position: absolute;
+   top: 15%;
+   left: 20%;
+}
+.headr .LeftSideHeadrContent .headrcontent h1{
+    color: #3554d1;
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 0 0 8px;
+    font-weight: 750;
+}
+.headr .LeftSideHeadrContent .headrcontent h1 span{
+    color: #0f2480;
+}
+.headr .LeftSideHeadrContent .headrcontent p{
+    margin: 25px 0 16px;
+}
+.headr .LeftSideHeadrContent .headrcontent .btn-box{
+    margin: 45px 0 0;
+}
+.headr .LeftSideHeadrContent .headrcontent .btn-box a{
+    background-color: transparent;
+    padding: 8px 35px;
+    border: 1px solid #3554d1;
+    border-radius: 25px;
+    margin: 0 0 75px;
+    transition: background .3s ease;
+    text-decoration: none;
+    color: #3554d1;
+    text-transform: capitalize;
+}
+.headr .LeftSideHeadrContent .headrcontent .btn-box a:hover{
+    background-color: #3554d1;
+    color: white;
+}
+.headr .find_section{
+    width: 100%;
+    height: 8vh;
+    /* background-color: brown; */
+    transform: translateY(-50px);
+}
+.headr .find_section .container{
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.headr .find_section .container form{
+    padding: 20px 45px;
+    box-shadow:0 0 20px 11px rgba(0, 0, 0,9%);
+    background-color: #ffff;
+}
+.headr .find_section .container form .form-row{
+   display: flex;
+}
+.headr .find_section .container form .form-row div input{
+   border-radius: 0;
+   width: 98%;
+   padding: 10px 20px;
+}
+.headr .find_section .container form .form-row div button{
+    padding:10px 20px ;
+    width: 150px;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    background-color: #f97616;
+}
+/* start of the about the apartment container */
+.aboutTheApartment{
+    height:85vh;
+    transform: translateY(80px);
+    position: relative;
+    padding-top: 75px;
+}
+.aboutTheApartment .square_pic{
+    position: absolute;
+    bottom: 0;
+    left: 93%;
+}
+.aboutTheApartment .container{
+    height: 56vh;
+    display: flex;   
+    align-items: center;
+}
+.aboutTheApartment .container div{
+    width: 50%;
+    height: 95%;
+}
+.aboutTheApartment .container .about_heading div{
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 17px;
+    transform: translateX(-54px);
+    
+}
+.aboutTheApartment .container .about_heading div h2{
+    text-transform: capitalize;
+    border-left: 6px solid  #0f2480;
+    padding-left: 6px;
+    font-weight: 700;
+    color: black;
+    width: fit-content;
+}
+.aboutTheApartment .container .about_heading div p{
+    margin-top: 20px;
+    font-weight: 400;
+}
+.aboutTheApartment .container .about_heading div a{
+    text-decoration: none;
+    color:#3554d1;
+    text-transform: capitalize;
+    border: 1px solid #3554d1;
+    padding: 7px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 25px;
+    transition: background .3s ease;
+}
+.aboutTheApartment .container .about_heading div a:hover{
+    color: white;
+    background-color: #3554d1;
+}
+/* end of about the apartment */
+.house_forsale{
+    width: 100%;
+    height: 125vh;
+    transform: translateY(95px);
+    position: relative;
+}
+.house_forsale .house_heading{
+    width: 100%;
+    height: 20vh;
+}
+.house_forsale .house_heading h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    border-left: 6px solid  #0f2480;
+    padding-left: 6px;
+    width: fit-content;
+    margin: auto;
+    color: black;
+}
+.house_forsale .house_heading p{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.house_forsale .house_list {
+ height: calc(100% - 20vh);
+ width: 95%;
+ position: absolute;
+ left: 2.5%;
+ display: flex;
+ flex-wrap: wrap;
+ /* align-items: center; */
+ justify-content: space-evenly;
+ align-content: space-between;
+}
+.house_forsale .house_list .list{
+    width: 32%;
+    height: 47%;
+    margin: 10px 0;
+}
+.house_forsale .house_list .list .pic{
+    background-color: #f97616;
+    height: 76%;
+}
+.house_forsale .house_list .list .pic img{
+    height: 100%;
+    width: 100%;
+}
+.house_forsale .house_list .pic_para{
+    height: calc(100% - 76%);
+}
+.house_forsale .house_list .pic_para h5 {
+ font-weight: 700;
+ margin-top: 5px;
+}
+.house_forsale .house_list .pic_para p{
+    font-weight: 400;
+}
+.house_forsale .btn{
+    position: absolute;
+    bottom: -7%;
+    left: 44%; 
+    box-shadow: none;
+    border: 0;
+}
+.house_forsale .btn button{
+    border: 1px solid #3554d1;
+    padding: 7px 30px;
+    color: #3554d1;
+    background: transparent;
+    border-radius: 25px;
+    text-transform: capitalize;
+    transition: background .3s ease;
+}
+.house_forsale .btn button:hover{
+    color: white;
+    background-color: #3554d1;
+}
+.priceing{
+    transform: translateY(170px);
+    height: 100vh;
+}
+.priceing .pricehead{
+    width: 100%;
+    height: 17vh;
+   
+}
+.priceing .pricehead h2{
+    text-transform: capitalize;
+    border-left: 6px solid #0f2480;
+    padding-left: 6px;
+    width: fit-content;
+    margin: auto;
+    font-weight: 700;
+    color: black;
+    transform: translateY(20px);
+}
+.priceing .pricehead p{
+    text-align: center;
+    margin-top: 35px;
+    font-weight: 400;
+}
+.priceing .pricelist{
+    width: 100%;
+    height: calc(95% - 17vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.priceing .pricelist .same{
+    height: 80%;
+    margin: 0 7px;
+    width: 21%;
+}
+.priceing .pricelist .same .pricenum{
+    background-color: #0f2480;
+    width: 100%;
+    height: 12vh;
+}
+.priceing .pricelist .same .pricenum h4{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 21px;
+}
+.priceing .pricelist .same .pricecard{
+    width: 100%;
+    background-color: #3554d1;
+    height: calc(100% - 12vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    line-height: 41px;
+}
+.priceing .pricelist .same .pricecard p,h2{
+    text-align: center;
+    color: white;
+}
+.priceing .pricelist .same .pricecard h2{
+    position: relative;
+}
+.priceing .pricelist .same .pricecard h2::after{
+   content: "";
+   width: 3px;
+   height: 45px;
+   background-color: white;
+   position: absolute;
+   transform: rotate(90deg);
+   bottom: -31px;
+   right: 50%;
+   border-radius: 10px;
+}
+
+
+.priceing .btnn{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.priceing .btnn button{
+    margin: 0 110px;
+    padding: 2px 20px;
+    border: 0;
+    background: #0f2480;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 25px;
+}
+.housedeal{
+    /* background-color: antiquewhite; */
+    transform: translateY(300px);
+    height: 50vh;
+}
+.housedeal .container{
+    height: 50%;
+}
+.housedeal .container .row .layout{
+    /* background-color: azure; */
+    height: 50vh;
+}
+.housedeal .container .row .layout h3{
+    text-transform: capitalize;
+    border-left:6px solid #0f2480;
+    padding-left: 6px;
+    font-weight: 700;
+    width: fit-content;
+    color: black;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.housedeal .container .row .layout p{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.housedeal .container .row .layout a{
+    text-decoration: none;
+    color: #0f2480;
+    border: 1px solid #0f2480;
+    padding: 7px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 50px;
+    transition: background .3s ease;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.housedeal .container .row .layout a:hover{
+    background-color: #3554d1;
+    color: white;
+    transition: background .3s ease;
+}
+.housedeal .container .row .layout.sconddiv{
+   display: flex;
+   align-items: center;
+}
+.housedeal .container .row .layout.sconddiv .secongimg{
+    margin-left: 18px;
+}
+/* end of house deals */
+.choose_us{
+    width: 100%;
+    height: 55vh;
+    background-color: #0f2480;
+    transform: translateY(340px);
+    padding: 20px;
+    color: white;
+}
+.choose_us .choose_head{
+    /* background-color: antiquewhite; */
+    width: fit-content;
+    margin: auto;
+    color: white;
+    height: 9vh;
+}
+.choose_us .choose_head h2{
+    font-size: 2rem;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-weight: 800;
+    border-left: 6px solid white;
+}
+.choose_us .features{
+    /* background-color: antiquewhite; */
+    height: calc(85% - 9vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.choose_us .features div{
+    width: 20%;
+    height: 28vh;
+    /* background-color: #f97616; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.choose_us .features div h4{
+    text-align: center;
+    margin: 7px;
+    font-weight: 800;
+    font-size: 27px;
+}
+.choose_us .features div img{
+    width: 55px;
+}
+.choose_us .features div h5{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.choose_us .btn_container{
+    /* background-color: aqua; */
+    width: 85%;
+    height: calc(39% - 9vh);
+    margin: auto;
+}
+.btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_container a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    background-color: white;
+    padding: 7px 30px;
+    border-radius: 25px;
+    display: inline-block;
+}
+.btn_container a:hover{
+    color: black;
+}
+
+/* footer */
+.get_in_touch{
+    position: relative;
+    top: 9%;
+}
+.get_in_touch h2{
+    text-transform: capitalize;
+    width: fit-content;
+    margin: auto;
+    border-left: 7px solid #0f2480;
+    padding-left: 6px;
+    color: black;
+    font-weight: 750;
+}
+footer{
+    transform: translateY(450px);   
+    background-color: #0f2480;
+    height: 130vh;
+}
+footer .map_form{
+    height: 75vh;
+    display: flex;
+    /* background-color: gold; */
+}
+
+footer .map_form .map{
+    width: 50%;
+    /* background-color: bisque; */
+}
+footer .map_form .form{
+    width: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+}
+footer .map_form .form form{
+    /* background-color: #845f44; */
+    width: 100%;
+    height: 420px;
+}
+footer .map_form .form form input{
+    width: 60%;
+    padding: 12px;
+}
+footer .map_form .form form input:focus{
+   outline: none;
+}
+footer .map_form .form form input::placeholder{
+    color: black;
+}
+footer .map_form .form form :nth-of-type(4){
+    padding: 40px 12px;
+}
+footer .map_form .form form button{
+    border: 0;
+    padding: 9px 55px;
+    background-color: #f97616;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transform: translateX(310px);
+}
+footer .company_address{
+    height: calc(130vh - 75vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .company_address .comapny_info_container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .company_address .comapny_info_container .main{
+    width: 300px;
+    height: 31vh;
+}
+footer .company_address .comapny_info_container .about_apartment h2{
+    color: white;
+    text-transform: capitalize;
+    text-align: left;
+}
+footer .company_address .comapny_info_container .about_apartment div{
+    margin: 20px 0;  
+    height: 15%; 
+}
+footer .company_address .comapny_info_container .about_apartment div span{
+    color: white;
+    text-transform: capitalize;
+    margin-left: 9px;
+}
+footer .company_address .comapny_info_container .information{
+    width: 250px;
+}
+footer .company_address .comapny_info_container .information h2, footer .company_address .comapny_info_container .useful_links h2 ,footer .company_address .comapny_info_container .newsletter h2{
+    text-align: left;
+}
+footer .company_address .comapny_info_container .information p{
+    color: white;
+    margin-top: 15px;
+    font-size: 17px;
+}
+footer .company_address .comapny_info_container .useful_links{
+    width: 220px;
+}
+footer .company_address .comapny_info_container .useful_links p{
+    color: white;
+    margin: 20px 0;
+    font-size: 17px;
+}
+footer .company_address .comapny_info_container .newsletter{
+    width: 330px;
+}
+footer .company_address .comapny_info_container .newsletter form{
+    /* background-color: blueviolet; */
+    height: 17vh;
+    padding: 20px 0;
+}
+footer .company_address .comapny_info_container .newsletter form input{
+    padding:5px ;
+    width: 80%;
+}
+footer .company_address .comapny_info_container .newsletter form input::placeholder{
+    text-transform: capitalize;
+}
+footer .company_address .comapny_info_container .newsletter form input:focus{
+    outline: none;
+}
+footer .company_address .comapny_info_container .newsletter form button{
+    margin-top: 16px;
+    border: 0;
+    padding: 7px 30px;
+    background-color: #f97616;
+    color: white;
+    text-transform: uppercase;
+}
+footer .company_address .comapny_info_container .newsletter .pics{
+    /* background-color: gray; */
+    height:8vh;
+    display: flex;
+    align-items: flex-end;
+}
+footer .company_address .comapny_info_container .newsletter .pics img{
+    margin: 0 10px;
+}
